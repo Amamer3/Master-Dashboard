@@ -7,7 +7,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
-    <title>Dashboard</title>
+    <title>Users</title>
 </head>
 
 <body>
@@ -20,11 +20,11 @@
             <div class="logo-name"><span>Asmr</span>Prog</div>
         </a> -->
         <ul class="side-menu">
-            <li class="active"><a href="index.html"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
+            <li><a href="index.html"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
             <li><a href="#"><i class='bx bx-store-alt'></i>Shop</a></li>
-            <li><a href="#"><i class='bx bx-analyse'></i>Analytics</a></li>
+            <li class="#"><a href="#"><i class='bx bx-analyse'></i>Analytics</a></li>
             <li><a href="#"><i class='bx bx-message-square-dots'></i>Tickets</a></li>
-            <li><a href="users.html"><i class='bx bx-group'></i>Users</a></li>
+            <li class="active"><a href="users.html"><i class='bx bx-group'></i>Users</a></li>
             <li><a href="#"><i class='bx bx-cog'></i>Settings</a></li>
         </ul>
         <ul class="side-menu">
@@ -65,58 +65,21 @@
         <main>
             <div class="header">
                 <div class="left">
-                    <h1>Dashboard</h1>
+                    <h1>USERS</h1>
                     <ul class="breadcrumb">
                         <li><a href="#">
                                 Analytics
                             </a></li>
                         /
-                        <li><a href="#" class="active">Shop</a></li>
+                        <li><a href="#" class="active">New</a></li>
                     </ul>
                 </div>
                 <a href="#" class="report">
+                    
                     <i class='bx bx-cloud-download'></i>
-                    <span>Download CSV</span>
+                    <span>Download User Report</span>
                 </a>
             </div>
-
-            <!-- Insights -->
-            <ul class="insights">
-                <li>
-                    <i class='bx bx-calendar-check'></i>
-                    <span class="info">
-                        <h3>
-                            1,074
-                        </h3>
-                        <p>Paid Order</p>
-                    </span>
-                </li>
-                <li><i class='bx bx-show-alt'></i>
-                    <span class="info">
-                        <h3>
-                            3,944
-                        </h3>
-                        <p>Site Visit</p>
-                    </span>
-                </li>
-                <li><i class='bx bx-line-chart'></i>
-                    <span class="info">
-                        <h3>
-                            14,721
-                        </h3>
-                        <p>Searches</p>
-                    </span>
-                </li>
-                <li><i class='bx bx-dollar-circle'></i>
-                    <span class="info">
-                        <h3>
-                            $6,742
-                        </h3>
-                        <p>Total Sales</p>
-                    </span>
-                </li>
-            </ul>
-            <!-- End of Insights -->
 
             <div class="bottom-data">
                 <div class="orders">
@@ -124,7 +87,8 @@
                         <i class='bx bx-receipt'></i>
                         <h3>Recent Orders</h3>
                         <i class='bx bx-filter'></i>
-                        <i class='bx bx-search'></i>
+                        <input class="search">
+                        <!-- <i class='bx bx-search'></i> -->
                     </div>
                     <table>
                         <thead>
@@ -138,6 +102,56 @@
                             <tr>
                                 <td>
                                     <img src="images/profile-1.jpg">
+                                    <p>Henry Brown</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="status completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/profile-1.jpg">
+                                    <p>Emily Johnson</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/profile-1.jpg">
+                                    <p>James Turner</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="status process">Processing</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <img src="images/profile-1.jpg">
+                                    <p>Benjamin Davis</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="status completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/profile-1.jpg">
+                                    <p>Liam Wilson</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/profile-1.jpg">
+                                    <p>William Harris</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="status process">Processing</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <img src="images/profile-1.jpg">
                                     <p>Jack Jones</p>
                                 </td>
                                 <td>14-08-2023</td>
@@ -146,7 +160,7 @@
                             <tr>
                                 <td>
                                     <img src="images/profile-1.jpg">
-                                    <p>Billy Hobbs</p>
+                                    <p>Oliver Anderson</p>
                                 </td>
                                 <td>14-08-2023</td>
                                 <td><span class="status pending">Pending</span></td>
@@ -154,7 +168,32 @@
                             <tr>
                                 <td>
                                     <img src="images/profile-1.jpg">
-                                    <p>Benson Clark</p>
+                                    <p>Sophia Martin</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="status process">Processing</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <img src="images/profile-1.jpg">
+                                    <p>Ethan Clark</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="status completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/profile-1.jpg">
+                                    <p>Charlotte Hall</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/profile-1.jpg">
+                                    <p>Olivia Martinez</p>
                                 </td>
                                 <td>14-08-2023</td>
                                 <td><span class="status process">Processing</span></td>
@@ -164,7 +203,7 @@
                 </div>
 
                 <!-- Reminders -->
-                <div class="reminders">
+                <!-- <div class="reminders">
                     <div class="header">
                         <i class='bx bx-note'></i>
                         <h3>Remiders</h3>
@@ -194,11 +233,13 @@
                             <i class='bx bx-dots-vertical-rounded'></i>
                         </li>
                     </ul>
-                </div>
+                </div> -->
 
                 <!-- End of Reminders-->
 
             </div>
+
+
 
         </main>
 

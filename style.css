@@ -53,6 +53,46 @@ body{
     margin: 3px;
 }
 
+
+.search{
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    padding: 10px;
+    transition-duration: 500ms;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+    border: 1px solid black;
+    overflow: hidden;
+    background-image: url(images/search.svg);
+    background-repeat: no-repeat;
+    background-size: 13px;
+    background-position: 45% 50%;
+}
+
+.search:hover{
+    border: 1px solid #ff9950;
+}
+
+.search:focus{
+    width: 200px;
+    cursor: text;
+    padding-left: 40px;
+    color: black;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #ff9950;
+    background: url(images/search.svg) no-repeat;
+    background-size: 13px;
+    background-position: 10px 50%;
+}
+
+
+
 .sidebar{
     position: fixed;
     top: 0;
